@@ -7,8 +7,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from Wavelet_Calculator import extract_WTCC
 
-AUDIO_DIR = "C:/Users/Stergios/Desktop/Datasets/GTZAN/genres_modified"
-ANNOTATIONS_DIR = "C:/Users/Stergios/Desktop/Datasets/GTZAN/features_combined_2.csv"
+AUDIO_DIR = "<AUDIO_PATH>"
+ANNOTATIONS_DIR = "<LABELS_PATH>"
 
 
 def spectral_cent(signal, sr): 
