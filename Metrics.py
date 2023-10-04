@@ -5,8 +5,8 @@ from sklearn.metrics import confusion_matrix
 import itertools
 import numpy as np
 
-AUDIO_DIR = "C:/Users/Stergios/Desktop/Datasets/GTZAN/genres_modified"
-ANNOTATIONS_FILE = "C:/Users/Stergios/Desktop/Datasets/GTZAN/annotations_file_3.csv"
+AUDIO_DIR = "<AUDIO_PATH>"
+ANNOTATIONS_FILE = "<LABELS_PATH>"
 SAMPLE_RATE = 22050
 NUM_SAMPLES = 22050
 BATCH_SIZE = 32
