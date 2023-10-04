@@ -15,8 +15,8 @@ import numpy as np
 BATCH_SIZE = 40
 EPOCHS = 6
 LEARNING_RATE = 0.0001
-ANNOTATIONS_FILE = "C:/Users/Stergios/Desktop/Datasets/GTZAN/annotations_file_3.csv"
-AUDIO_DIR = "C:/Users/Stergios/Desktop/Datasets/GTZAN/genres_modified"
+ANNOTATIONS_FILE = "<LABELS_PATH>"
+AUDIO_DIR = "<AUDIO_PATH>"
 SAMPLE_RATE = 22050
 NUM_SAMPLES = 3*22050
 N_FOLDS = 5
@@ -225,8 +225,8 @@ if __name__ == "__main__":
     kfold = KFold(n_splits=N_FOLDS, shuffle=True)
     
     # construct model and assign it to device
-    #model = ResNet50(num_classes=10, img_channel=1).to(device=device)
-    model = VGG16().to(device=device)
+    model = ResNet50(num_classes=10, img_channel=1).to(device=device)
+    #model = VGG16().to(device=device)
     #model = CNNNetwork().to(device=device)
     print(model) 
     param = sum(p.numel() for p in model.parameters() if p.requires_grad)
